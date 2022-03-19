@@ -371,6 +371,8 @@ code {
 .depmo-cart {
     width: 100%;
     display: inline-flex;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding-bottom: 10px;
 }
 
 .total-price {
@@ -385,6 +387,29 @@ code {
     display: flex;
 }
 
+.prce-depsing-left {
+    text-align: right;
+    margin-top: 8px;
+}
+
+.proceed-chekK {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.proceed-chekK:hover {
+    background-color: #ea1e63;
+    color: #fff;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
 
 /* Add to Cart  */
 
@@ -394,7 +419,7 @@ code {
     align-items: center;
 }
 
-.page-wrapper button {
+.page-wrapper .addtocart {
     width: 100%;
     display: grid;
     border-radius: 4px;
@@ -406,14 +431,14 @@ code {
     transition: .3s ease-in-out;
 }
 
-.page-wrapper button:hover {
+.page-wrapper .addtocart:hover {
     background: #222;
     color: #fff;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
 
-.page-wrapper button .cart-item:before {
+.page-wrapper .addtocart .cart-item:before {
     content: "1";
     display: block;
     line-height: 24px;
@@ -427,12 +452,12 @@ code {
     text-align: center;
 }
 
-.page-wrapper button.sendtocart .cart-item {
+.page-wrapper .addtocart.sendtocart .cart-item {
     display: block;
     animation: xAxis 1s forwards cubic-bezier(1, 0.44, 0.84, 0.165);
 }
 
-.page-wrapper button.sendtocart .cart-item:before {
+.page-wrapper .addtocart.sendtocart .cart-item:before {
     animation: yAxis 1s alternate forwards cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -523,8 +548,8 @@ code {
 }
 
 .mini img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 95px;
+    min-height: 95px;
     float: left;
     margin: 6px 6px 0px 0px;
     cursor: pointer;
@@ -591,6 +616,40 @@ code {
     transition: .3s ease-in-out;
 }
 
+.product_discription p {
+    margin: 10px 0;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 10px;
+}
+
+.product_discription .hight-review {
+    margin: 10px 0;
+}
+
+.product_discription .hight-review .stars {
+    color: #ffc21f;
+    font-size: 14px;
+}
+
+.product_discription .hight-review .stars-non {
+    color: rgb(133, 131, 131);
+    font-size: 14px;
+}
+
+.product-dis__awar ul li {
+    margin: 8px 0;
+}
+
+.product-dis__awar ul li h4 {
+    font-size: 14px;
+}
+
+.product-dis__awar ul li h4 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000080
+}
+
 
 /* select  */
 
@@ -647,6 +706,15 @@ select::-ms-expand {
 
 .selectdiv select:active {
     outline: none !important;
+}
+
+.input-textfield-text {
+    border: 1px solid #ebebeb;
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: 5px;
+    width: 100%;
+    height: 250px;
 }
 
 

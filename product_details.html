@@ -86,7 +86,7 @@
         </div>
     </div>
     <div class="container mx-auto">
-        <div class="grid md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-2 gap-3 md:py-16 sm:py-5 ">
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-2 gap-3 md:py-16 mx-8 sm:py-5 ">
             <div class="product-dem">
 
                 <div class="simple-gallery">
@@ -109,13 +109,61 @@
             <div class="product-varriable px-5">
                 <h3 class="font-bold text-2xl mb-2 uppercase">Product Name</h3>
 
-                <div class="product_discription ">
-                    <h5 class="text-gray-700 font-bold">Description</h5>
-                    <p class="py-2 mb-2 mt-4 text-justify text-zinc-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <div class="product_discription">
+                    <h5 class="text-gray-500 text-sm">Model Number |<span>SKU: KM45VGRT</span></h5>
+                    <div class="hight-review">
+                        <a href="#">
+                            <i class="fa fa-star stars" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-star stars" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-star stars" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-star stars-non" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-star stars-non" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="justify-center">
+                        <div class="form-check cursor-pointer">
+                            <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-green-600 checked:border-green-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault2">
+                                  In Stock
+                                </label>
+                        </div>
+                        <div class="form-check cursor-pointer">
+                            <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-red-600 checked:border-red-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault1">
+                                Out of Stock 
+                                </label>
+                        </div>
+
+                    </div>
+
+                    <p class="text-zinc-500 mb-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                    <div class="product-dis__awar">
+                        <ul>
+                            <li>
+                                <h4><span>Categories: </span> Denim, Men, Swimwear, T-Shirts, Underwear, Women</h4>
+                            </li>
+                            <li>
+                                <h4><span>Tags: </span> Bestseller, Trend</h4>
+                            </li>
+                            <li>
+                                <h4><span>Brands: </span> Adidas, Loft, Nike</h4>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="selectdiv">
+                <div class="selectdiv my-4">
                     <label>
                       <select>
                         <option selected disabled hidden> Select Size (Age Group) </option>
@@ -136,8 +184,8 @@
 
                 <div class="my-4">
                     <div class="product-rate inline-flex">
-                        <span class="mr-2 text-gray-900 text-base font-bold">Price: $139.00</span>
-                        <span class="product-line line-through text-zinc-300 ">$10.00</span>
+                        <span class="mr-2  text-lg text-bold text-rose-500">Price: $139.00</span>
+                        <span class="product-line line-through text-lg text-zinc-300 ">$10.00</span>
                     </div>
                 </div>
 
@@ -145,26 +193,49 @@
                     <div class=" my-5">
                         <div class="product_link-wt text-center md:mx-4 sm:mx-1 grid grid-cols-2">
                             <div class="page-wrapper">
-                                <button class="addtocart" class="product-grid__btn">
+                                <a href="cart.html" class="addtocart" class="product-grid__btn">
                                     <i class="fa fa-cart-arrow-down"></i>
-                                      <h6> Add to Cart </h6>
-                                    </button>
+                                    <h6> Add to Cart </h6>
+                                </a>
                             </div>
                             <div class="order-way">
-
                                 <a target="_blank" href="https://wa.me/+91 99496123123" class="product-grid__btn product-grid__view">
                                     <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                     <h6> Whatsapp </h6>
                                 </a>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+    </div>
+    <div class="container mx-auto">
+        <div class="grid md:grid-cols-1 lg:grid-cols-1 sm:grid-cols-1 mx-8 gap-3">
+            <div class="rounded border mx-auto mt-2 mb-10">
+                <!-- Tabs -->
+                <ul id="tabs" class="inline-flex pt-2 px-1 w-full border-b">
+                    <li class="bg-white px-4 text-gray-800 font-semibold py-2 rounded-t border-t border-r border-l -mb-px"><a id="default-tab" href="#first">Description</a></li>
+                    <li class="px-4 text-gray-800 font-semibold py-2 rounded-t"><a href="#second">Reviews (1)</a></li>
 
+                </ul>
+
+                <!-- Tab Contents -->
+                <div id="tab-contents">
+                    <div id="first" class="p-4">
+                        <p class="text-zinc-400 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <div id="second" class="hidden p-4">
+                        <p class="text-zinc-400 text-sm">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
+                            many web sites still in their infancy.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Footer Section   -->
     <section class="bg-footer-cr ">
@@ -284,7 +355,36 @@
         })
     </script>
 
+    <script>
+        let tabsContainer = document.querySelector("#tabs");
 
+        let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
+
+        console.log(tabTogglers);
+
+        tabTogglers.forEach(function(toggler) {
+            toggler.addEventListener("click", function(e) {
+                e.preventDefault();
+
+                let tabName = this.getAttribute("href");
+
+                let tabContents = document.querySelector("#tab-contents");
+
+                for (let i = 0; i < tabContents.children.length; i++) {
+
+                    tabTogglers[i].parentElement.classList.remove("border-t", "border-r", "border-l", "-mb-px", "bg-white");
+                    tabContents.children[i].classList.remove("hidden");
+                    if ("#" + tabContents.children[i].id === tabName) {
+                        continue;
+                    }
+                    tabContents.children[i].classList.add("hidden");
+
+                }
+                e.target.parentElement.classList.add("border-t", "border-r", "border-l", "-mb-px", "bg-white");
+            });
+        });
+    </script>
+    <!-- Nav Setion end  -->
 </body>
 
 </html>
