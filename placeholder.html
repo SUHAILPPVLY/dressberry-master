@@ -68,17 +68,12 @@
         </div>
     </header>
     <!-- Header section top -->
-    <section>
-        <div class="cart-home-img">
-            <img src="assets/image/banner-slide-contact.jpg" width="100%" alt="">
-        </div>
-    </section>
+
     <div class="container mx-auto">
         <div class="grid">
-            <div class="col-span-12 py-6">
-                <div class="pro-duc-head text-center">
-                    <h3>Proceed Billing</h3>
-                    <span></span>
+            <div class="col-span-12 md:py-6 sm:py-3 lg:py-3">
+                <div class="thank-receive text-center">
+                    <h3>Thank You. Your order has been received.</h3>
                 </div>
             </div>
         </div>
@@ -86,78 +81,74 @@
 
 
     <div class="container mx-auto">
-        <div class="grid grid-cols-3 gap-4 my-8 mx-8">
-            <div class="col-span-2">
-                <div class="top-levle__adet">
-                    <form action="/index.html">
-                        <h3>Billing Address</h3>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-2 gap-3">
-                            <div class="from-ded  my-1">
-                                <label for="text">Name :</label>
-                                <input type="text" placeholder="Name" class="input-textfield">
-                            </div>
-                            <div class="from-ded  my-1">
-                                <label for="text">Place :</label>
-                                <input type="text" placeholder="Enter Place" class="input-textfield">
-                            </div>
-                            <div class="from-ded  my-1">
-                                <label for="text">Mobile Number :</label>
-                                <input type="number" placeholder="Mobile Number" class="input-textfield">
-                            </div>
-                            <div class="from-ded  my-1">
-                                <label for="text">Email :</label>
-                                <input type="text" placeholder="Email" class="input-textfield">
-                            </div>
-
-                        </div>
-                        <div class="from-ded  my-1">
-                            <label for="text">Discription :</label>
-                            <textarea type="text" placeholder="Message" class="input-textfield-text"> </textarea>
-                        </div>
-                    </form>
+        <div class="grid md:grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:my-8 sm:my-8 lg:my-10 md:mx-8 sm:mx-4 lg:mx-4 ">
+            <div class="order_lev text-center">
+                <div class="head-part">
+                    <h4>Order Number:</h4>
+                    <span>125875</span>
                 </div>
-
-
-
             </div>
-            <div class="palce-billing px-5">
-                <div class="grid grid-cols-1 ">
-                    <div class="prce-depsing">
-                        <h3>Price Details</h3>
-                        <div class="depmo-cart">
-                            <div class="total-price w-1/2">
-                                <h4>Total Price</h4>
-                            </div>
-                            <div class="price_ins  w-1/2 float-right">
-                                <span>$000.00 </span>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="prce-depsing-left">
-                        <div class="depmo-cart-left">
-                            <div class="total-price">
-                                <h4>Free Shipping : Rs.000.00</h4>
-                                <h4>Including Tax : Rs.000.00 </h4>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="proceed-chekK">
-                        <a href="#">Place Order </a>
-                    </div>
+            <div class="order_lev text-center">
+                <div class="head-part">
+                    <h4>Date:</h4>
+                    <span>March 21, 2022</span>
                 </div>
-
             </div>
-
+            <div class="order_lev text-center">
+                <div class="head-part">
+                    <h4>Total:</h4>
+                    <span>$2,050.00</span>
+                </div>
+            </div>
+            <div class="order_lev text-center">
+                <div class="head-part">
+                    <h4>Payments Method:</h4>
+                    <span>Cash on Delivery</span>
+                </div>
+            </div>
         </div>
     </div>
-
-
+    <!-- Order Summary  -->
+    <div class="container mx-auto">
+        <div class="grid md:grid-cols-1 gap-4 md:my-8 sm:my-8 lg:my-8 md:mx-8 sm:mx-4 lg:mx-4 ">
+            <div class="order_summary">
+                <div class="detail_aww mb-4">
+                    <h3>Pay with cash upon delivery</h3>
+                    <h2 class="uppercase font-bold mt-2">Order Details</h2>
+                </div>
+                <table class="table-auto w-full md:">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cubitt Smart Watch CT2S Waterproof Fitness Tracker</td>
+                            <td>₹1.499.00</td>
+                        </tr>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>₹1.499.00</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td>₹49.00</td>
+                        </tr>
+                        <tr>
+                            <td>Payments Method</td>
+                            <td>Cash on Delivery</td>
+                        </tr>
+                        <tr>
+                            <td>Total:</td>
+                            <td>₹1,548.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
     <!-- Footer Section   -->
     <section class="bg-footer-cr ">
         <div class="container mx-auto">

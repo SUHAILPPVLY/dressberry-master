@@ -70,7 +70,7 @@
     <!-- Header section top -->
     <section>
         <div class="cart-home-img">
-            <img src="assets/image/banner-slide-contact.jpg" width="100%" alt="">
+            <img src="assets/image/banner-slide-cart.jpg" width="100%" alt="">
         </div>
     </section>
     <div class="container mx-auto">
@@ -86,15 +86,15 @@
 
 
     <div class="container mx-auto">
-        <div class="grid grid-cols-3 gap-4 my-8 mx-8">
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 md:gap-4 sm:gap-2 lg:gap-2 md:my-8 sm:my-4 lg:my-4 md:mx-8 sm:mx-4 lg:mx-4">
             <div class="col-span-2">
                 <div class="order-inwold">
                     <h3>Your Order</h3>
                     <div class="order-men p-2 mb-4">
-                        <div class="flex">
+                        <div class="md:flex sm:block lg:flex">
                             <div class="checj-img">
                                 <a href="#">
-                                    <img src="assets/image/checkout/item-image-01.png" width="120" height="150" alt="">
+                                    <img src="assets/image/cart/item-image-01.png" width="120" height="150" alt="">
                                 </a>
                             </div>
                             <div class="pro-awrw-ds">
@@ -102,23 +102,59 @@
                                 <p>A collection of inspiration for men's casual outfits</p>
                                 <span class="product-grid__price-list font-bold my-2">₹1.499</span>
                             </div>
-                            <div class="colle_remove my-12 mx-12 text-center">
+                            <div class="colle_remove md:my-9 sm:my-4 md:mx-6 sm:mx-4 text-center">
                                 <button>Remove</button>
+                            </div>
+                            <div class="counter quanty-counter">
+                                <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                <input class="text-value" type="text" value="1">
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                            </div>
+                            <div class="price__Lia">
+                                <h5>Sub Total </h5>
+                                <span>₹1.499</span>
                             </div>
                         </div>
                     </div>
+                    <div class="order-men p-2 mb-4">
+                        <div class="md:flex sm:block lg:flex">
+                            <div class="checj-img">
+                                <a href="#">
+                                    <img src="assets/image/cart/item-image-02.png" width="120" height="150" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-awrw-ds">
+                                <h5>Women Top Wear</h5>
+                                <p>A collection of inspiration for men's casual outfits</p>
+                                <span class="product-grid__price-list font-bold my-2">₹1.499</span>
+                            </div>
+                            <div class="colle_remove md:my-9 sm:my-4 md:mx-6 sm:mx-4 text-center">
+                                <button>Remove</button>
+                            </div>
+                            <div class="counter quanty-counter">
+                                <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                <input class="text-value" type="text" value="1">
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                            </div>
+                            <div class="price__Lia">
+                                <h5>Sub Total </h5>
+                                <span>₹1.499</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="palce-billing px-5">
-                <div class="grid grid-cols-1 ">
+                <div class="md:grid-cols-1 sm:grid-cols-1 ">
                     <div class="prce-depsing">
                         <h3>Price Details</h3>
                         <div class="depmo-cart">
                             <div class="total-price w-1/2">
-                                <h4>Total Price</h4>
+                                <h4 class="subs">Sub Total</h4>
                             </div>
                             <div class="price_ins  w-1/2 float-right">
-                                <span>$000.00 </span>
+                                <span class="subs">$000.00 </span>
                             </div>
 
                         </div>
@@ -133,11 +169,18 @@
                             </div>
 
                         </div>
-
-
                     </div>
+                    <div class="depmo-cart">
+                        <div class="total-price mt-2 w-1/2">
+                            <h4 class="subs">Total</h4>
+                        </div>
+                        <div class="price_ins  w-1/2 float-right">
+                            <span class="subs">$000.00 </span>
+                        </div>
+                    </div>
+
                     <div class="proceed-chekK">
-                        <a href="placeholder.html">Proceed Checkout </a>
+                        <a href="checkout.html">Proceed to Checkout </a>
                     </div>
                 </div>
 
@@ -237,7 +280,25 @@
     <script src="assets/js/categories-slide.js"></script>
     <script src="assets/js/top-btn.js"></script>
     <script src="assets/js/nav-bar.js"></script>
+    <script type="text/javascript">
+        function increaseCount(a, b) {
+            var input = b.previousElementSibling;
+            var value = parseInt(input.value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            input.value = value;
+        }
 
+        function decreaseCount(a, b) {
+            var input = b.nextElementSibling;
+            var value = parseInt(input.value, 10);
+            if (value > 1) {
+                value = isNaN(value) ? 0 : value;
+                value--;
+                input.value = value;
+            }
+        }
+    </script>
 
 </body>
 

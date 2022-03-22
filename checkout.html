@@ -70,7 +70,7 @@
     <!-- Header section top -->
     <section>
         <div class="cart-home-img">
-            <img src="assets/image/banner-slide-contact.jpg" width="100%" alt="">
+            <img src="assets/image/banner-slide-checkout.jpg" width="100%" alt="">
         </div>
     </section>
     <div class="container mx-auto">
@@ -86,28 +86,8 @@
 
 
     <div class="container mx-auto">
-        <div class="grid grid-cols-3 gap-4 my-8 mx-8">
-            <div class="col-span-2">
-                <div class="order-inwold">
-                    <h3>Your Order</h3>
-                    <div class="order-men p-2 mb-4">
-                        <div class="flex">
-                            <div class="checj-img">
-                                <a href="#">
-                                    <img src="assets/image/checkout/item-image-01.png" width="120" height="150" alt="">
-                                </a>
-                            </div>
-                            <div class="pro-awrw-ds">
-                                <h5>Mens Top Wear</h5>
-                                <p>A collection of inspiration for men's casual outfits</p>
-                                <span class="product-grid__price-list font-bold my-2">₹1.499</span>
-                            </div>
-                            <div class="colle_remove my-12 mx-12 text-center">
-                                <button>Remove</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 md:gap-4 sm:gap-4 lg:gap-3 md:my-8 sm:my-4 lg:my-4 md:mx-8 sm:mx-4 lg:mx-4 ">
+            <div class="col-span-2 md:my-4 sm:my-0 lg:my-0">
                 <div class="top-levle__adet">
                     <form action="/index.html">
                         <h3>Billing Address</h3>
@@ -125,57 +105,121 @@
                                 <input type="number" placeholder="Mobile Number" class="input-textfield">
                             </div>
                             <div class="from-ded  my-1">
-                                <label for="text">Discription :</label>
-                                <input type="text" placeholder="Message" class="input-textfield">
+                                <label for="text">Street Address :</label>
+                                <input type="text" placeholder="Street Address and Name" class="input-textfield">
                             </div>
+                            <div class="from-ded  my-1">
+                                <label for="text">State :</label>
+                                <input type="text" placeholder="State" class="input-textfield">
+                            </div>
+                            <div class="from-ded  my-1">
+                                <label for="text">District:</label>
+                                <div class="widget-wrap">
+                                    <div class="cselect">
+                                        <select>
+                                        <option>Malappuram</option>
+                                        <option>Palakkad</option>
+                                        <option>Kannur</option>
+                                        <option>Kozhikode</option>
+                                        <option>Thrissur</option>
+                                      </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="from-ded  my-1">
+                                <label for="text">Town / City:</label>
+                                <input type="text" placeholder="Town / City" class="input-textfield">
+                            </div>
+                            <div class="from-ded  my-1">
+                                <label for="text">Zipcode:</label>
+                                <input type="text" placeholder="Pincode" class="input-textfield">
+                            </div>
+                        </div>
+                        <div class="from-ded  my-3">
+                            <label for="text">Order Notes :</label>
+                            <textarea type="text" placeholder="Special Notes for Delivery" class="input-textfield-text"> </textarea>
                         </div>
                     </form>
                 </div>
-                <div class="top-levle__adet">
-                    <div class="grid md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-2 gap-3">
-
-                    </div>
-
-                </div>
-
-
             </div>
             <div class="palce-billing px-5">
-                <div class="grid grid-cols-1 ">
-                    <div class="prce-depsing">
-                        <h3>Price Details</h3>
+                <div class="grid-cols-1 ">
+                    <div class="prce-depsing your-order-come">
+                        <h3>Your Order Details</h3>
                         <div class="depmo-cart">
                             <div class="total-price w-1/2">
-                                <h4>Total Price</h4>
+                                <h4>Product</h4>
                             </div>
                             <div class="price_ins  w-1/2 float-right">
-                                <span>$000.00 </span>
+                                <span>Subtotal </span>
                             </div>
-
                         </div>
+                        <div class="prce-depsing-left">
+                            <div class="depmo-cart-left">
+                                <div class="total-price">
+                                    <h4>Cubitt Smart Watch CT2S Waterproof Fitness Tracker : Rs.000.00</h4>
+                                    <h4>Including Tax : Rs.000.00 </h4>
+                                </div>
 
-
-                    </div>
-                    <!-- <div class="prce-depsing">
-
+                            </div>
+                        </div>
                         <div class="depmo-cart">
-                            <div class="total-price">
-                                <h4>Total Price</h4>
+                            <div class="total-price mt-2 w-1/2">
+                                <h4 class="subs">Subtotal</h4>
                             </div>
-
+                            <div class="price_ins mt-2 w-1/2 float-right">
+                                <span class="subs">$000.00 </span>
+                            </div>
                         </div>
-                        <div class="price_ins float-right ">
-                            $000.00
+                        <div class="depmo-cart">
+                            <div class="total-price mt-2 w-1/2">
+                                <h4 class="subs">Total</h4>
+                            </div>
+                            <div class="price_ins mt-2 w-1/2 float-right">
+                                <span class="subs">$1000.00 </span>
+                            </div>
                         </div>
+                        <div class="mt-3">
+                            <div class="justify-center">
+                                <div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-green-300 bg-white checked:bg-green-600 checked:border-green-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                            type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label inline-block text-gray-800 font-semibold" for="flexRadioDefault2">
+                                            Direct bank transfer
+                                    </label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-green-600 checked:border-green-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                            type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label inline-block text-gray-800 font-semibold" for="flexRadioDefault1">
+                                            Check payments
+                                    </label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-green-600 checked:border-green-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                            type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                        <label class="form-check-label inline-block text-gray-800 font-semibold" for="flexRadioDefault3">
+                                            Cash on delivery
+                                    </label>
+                                    </div>
 
-                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terms-data">
+                            <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="#">Privacy Policy</a></p>
+                        </div>
+                        <div class="tacbox">
+                            <input id="checkbox" type="checkbox" />
+                            <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+                        </div>
+                        <div class="proceed-chekK">
+                            <a href="placeholder.html">Placeholder </a>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-            <div class="located-pin">
-                <div class="">
-
-                </div>
             </div>
 
         </div>

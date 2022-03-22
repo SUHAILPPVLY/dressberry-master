@@ -315,8 +315,8 @@ code {
 }
 
 .pro-awrw-ds {
-    padding: 15px 40px;
-    margin-top: 30px;
+    padding: 15px 20px;
+    margin-top: 0px;
 }
 
 .pro-awrw-ds h5 {
@@ -375,8 +375,13 @@ code {
     padding-bottom: 10px;
 }
 
-.total-price {
+.total-price h4 {
     font-size: 14px;
+    color: rgb(151, 151, 151);
+}
+
+.total-price .subs {
+    color: #222;
 }
 
 .price_ins {
@@ -392,11 +397,47 @@ code {
     margin-top: 8px;
 }
 
+.price__Lia {
+    margin: 25px 0;
+}
+
+.quanty-counter {
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+}
+
+.down {
+    border: 1px solid rgb(196, 196, 196);
+    min-width: 25px !important;
+    cursor: pointer;
+    min-height: 15px;
+    display: inline-block;
+}
+
+.up {
+    border: 1px solid rgb(196, 196, 196);
+    min-width: 25px !important;
+    min-height: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.text-value {
+    text-align: center;
+}
+
+.price__Lia span {
+    font-weight: 600;
+}
+
 .proceed-chekK {
     background-color: #222;
     color: #fff;
     padding: 10px 30px;
     border-radius: 5px;
+    display: grid;
+    width: 100%;
     margin-top: 20px;
     text-align: center;
     -webkit-transition: .3s ease-in-out;
@@ -708,13 +749,113 @@ select::-ms-expand {
     outline: none !important;
 }
 
+.from-ded label {
+    font-size: 14px;
+}
+
+.terms-data p {
+    font-size: 13px;
+    color: #8a8a8a;
+}
+
 .input-textfield-text {
     border: 1px solid #ebebeb;
     padding: 8px 15px;
     font-size: 14px;
     margin-top: 5px;
     width: 100%;
-    height: 250px;
+    height: 180px;
+}
+
+.tacbox {
+    display: block;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #eee;
+}
+
+.tacbox label {
+    font-size: 14px;
+}
+
+.cselect select {
+    appearance: none;
+}
+
+.cselect::after {
+    content: "";
+    background-image: url('../icon/drowp-arrow.png') !important;
+    background-position: unset;
+    background-size: auto;
+    position: relative;
+}
+
+.cselect {
+    position: relative;
+}
+
+.cselect::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+}
+
+
+/* (B1) MAKE <SELECT> FILL THE WRAPPER */
+
+.cselect select {
+    width: 100%;
+}
+
+
+/* (B2) ALL SAME HEIGHT */
+
+.cselect,
+.cselect::after,
+.cselect select {
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.cselect::after {
+    width: 40px;
+}
+
+.cselect select {
+    border: 1px solid #ebebeb;
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.cselect select:active,
+.cselect select:focus,
+.cselect select:hover {
+    outline: none;
+}
+
+
+/* (D) ARROW ON LEFT SIDE */
+
+.left.cselect select {
+    padding-left: 50px;
+}
+
+.left.cselect::after {
+    right: auto;
+    left: 0;
+    border-radius: 50%;
+}
+
+
+/* WIDGET */
+
+.widget-wrap {
+    width: 400px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
 }
 
 
@@ -891,6 +1032,72 @@ select::-ms-expand {
 }
 
 
+/* ====== Thank You Page  ======== */
+
+.thank-receive {
+    padding: 50px 50px;
+    border: 2px dotted #009c4e;
+}
+
+.thank-receive h3 {
+    font-size: 30px;
+    color: #009c4e;
+    font-weight: 600;
+}
+
+.order_lev .head-part h4 {
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.order_lev .head-part span {
+    font-weight: 600;
+    color: #222;
+}
+
+.order_summary {
+    border-top: 1px solid rgb(228, 228, 228);
+    padding-top: 30px;
+}
+
+.order_summary table thead {
+    text-align: left;
+}
+
+.order_summary table {
+    border: 1px solid #e9e9e9;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.order_summary table td {
+    border: 1px solid #e7e7e7;
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.order_summary table th {
+    border: 1px solid #e7e7e7;
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.order_summary tr:nth-child(5) {
+    background-color: #e9e9e9;
+}
+
+.order_summary thead:nth-child(1) {
+    background-color: #f3f3f3;
+}
+
+.order_summary td:nth-child(1) {
+    font-weight: 600;
+}
+
+
 /* WhatsApp Link  */
 
 .whatsapp-float_btn {
@@ -964,6 +1171,14 @@ select::-ms-expand {
     .logo img {
         max-width: 150px;
     }
+    header {
+        background-color: #fff;
+        border-bottom: 1px solid #e9e9e9;
+        box-shadow: 1px 3px 19px -10px #66666669;
+    }
+    .respo-menu {
+        margin-right: 15px;
+    }
     .about-our-dist {
         margin-top: 0;
     }
@@ -992,6 +1207,9 @@ select::-ms-expand {
     .navigation-img-wrapper {
         text-align: revert;
     }
+    .pro-duc-head h3 {
+        font-size: 22px;
+    }
     .contact-center {
         text-align: center;
     }
@@ -1005,8 +1223,9 @@ select::-ms-expand {
         margin-right: 0;
     }
     .mini img {
-        max-width: 55px;
-        max-height: 55px;
+        max-width: 53px;
+        min-height: 55px;
+        margin: 5px 3px;
     }
     .maxi {
         min-height: 300px;
@@ -1018,6 +1237,42 @@ select::-ms-expand {
     }
     .cart {
         bottom: 12%;
+    }
+    .qty {
+        display: inline-block;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+    .order-inwold {
+        margin: 10px;
+    }
+    .proceed-chekK {
+        margin: 20px 10px;
+    }
+    .thank-receive h3 {
+        font-size: 24px;
+    }
+    .thank-receive {
+        padding: 25px;
+    }
+    .detail_aww {
+        padding: 0px 10px;
+    }
+    .order_summary {
+        padding-top: 15px;
+    }
+    .widget-wrap {
+        width: 100%;
+    }
+    .input-textfield-text {
+        height: 80px;
+    }
+    .pro-awrw-ds {
+        padding: 0 0;
+        margin-top: 10px;
+    }
+    .top-levle__adet {
+        padding: 10px;
     }
     .foot-coll-db {
         text-align: left !important;
@@ -1032,5 +1287,11 @@ select::-ms-expand {
     }
     .wid-full {
         width: 100%;
+    }
+    .footer-divid img {
+        max-width: 200px;
+    }
+    .power-by-dn p {
+        font-size: 14px;
     }
 }
